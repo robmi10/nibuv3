@@ -1,0 +1,28 @@
+.containerglitch1 {
+    height: 2200px;
+    width: 2636px;
+    margin-top: -600px;
+    position: absolute;
+    left: -100px;
+    background-size: cover;
+    background: transparent;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+        helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+}
+
+
+@media only screen and (max-width: 1280px) {
+    .containerglitch1 {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        margin-top: -100px;
+        left: 0;
+        background-size: cover;
+        background: transparent;
+        font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+            helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+    }
+}
+
+

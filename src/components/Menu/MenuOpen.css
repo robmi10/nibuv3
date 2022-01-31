@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "BDRmono";
+    src: local("icarubriksiffror-webfont"),
+    url("../Fonts/BDRmono.otf") format("truetype");
+}
+
+@font-face {
+    font-family: "TWK";
+    src: local("icarubriksiffror-webfont"),
+    url("../Fonts/TWKLausanne-300.woff") format("truetype");
+}
+
+.item:hover a p.new-label:after{
+    content: 'Go To';
+}   
+
+.MenuOpenFont {
+      font-family: "BDRmono";
+}
+
+.MenuOpenFont2 {
+    font-family: "TWK";
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    margin-top: 5px;
+}
+ 
+.MenuOpencontainer {
+    position: absolute;
+    background: #eaeaea;
+    width: 99.5%;
+    height: 99%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 2;
+    clip-path: polygon(0% 0%, 100% 0, 100% 90.5%, 97.2% 100%, 0% 100%);
+}
+
+.MenuOpencontainer2 {
+    float:right;
+    background-color: #0000ff;
+    width: 619px;
+    height: 200px;
+    margin-right: 24px;
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    z-index: 2;
+    clip-path: polygon(0% 0%, 100% 0, 100% 90%, 97% 100%, 0% 100%);
+}
+
+@media only screen and (max-width: 768px) {
+    .MenuOpencontainer2 {
+        float:right;
+        background-color: #0000ff;
+        width: 357px;
+        height: 200px;
+        margin-right: 24px;
+        position: sticky;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        z-index: 2;
+        clip-path: polygon(0% 0%, 100% 0, 100% 90%, 97% 100%, 0% 100%);
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .MenuOpencontainer2 {
+        float:right;
+        background-color: #0000ff;
+        width: 150px;
+        height: 200px;
+        margin-right: 24px;
+        position: sticky;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        z-index: 2;
+        clip-path: polygon(0% 0%, 100% 0, 100% 90%, 97% 100%, 0% 100%);
+    }
+
+}
+.MenuText {
+    font-size: 24px;
+    position: absolute;
+    left: -5%;
+    margin-top: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+    .MenuText {
+        font-size: 20px;
+        position: absolute;
+        left: -8%;
+        margin-top: 22px;
+    }
+}
+
+
+

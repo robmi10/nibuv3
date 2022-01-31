@@ -1,0 +1,256 @@
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 1em;
+  font-family: 'Alike';
+  background-color: transparent;
+  color: #d9d9d9;
+}
+
+.containernav{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: blue;
+  color:rgb(0, 0, 0);
+}
+
+.navbar{
+  position: sticky;
+  background: black;
+  width: 100%;
+  top: 24px;
+  z-index: 999;
+}
+.mask {
+    font-size: 1.875rem;
+    background-size: 100% auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  .left {
+    padding: 1.618em 50% 3.236em 6.472em;
+    background-position: 100% 50%;
+  }
+
+  .right {
+    padding: 1.618em 50% 3.236em 6.472em;
+    background-position: 0% 100%;
+  }
+
+
+  @font-face {
+    font-family: "TWKLausanne";
+    src: local("icarubriksiffror-webfont"),
+     url("../Fonts/TWKLausanne-200.otf") format("truetype");
+    }
+  
+  .HeaderFont {
+      font-family: "TWKLausanne";
+  }
+
+
+
+.HeaderContainerProduct{
+  height: 100%;
+  width: 100%;
+  background-color: lightgray; 
+
+  border: 1pt solid rgb(255, 255, 255);
+  color: white;
+  clip-path: polygon(0% 0%, 100% 0, 100% 85.5%, 95.5% 99%, 0% 100%);
+}
+
+.HeaderContainerOut{
+  height: 200px;
+  width: 50%;
+  background-color: rgb(255, 255, 255); 
+  position: absolute;
+  right: 24pt;
+  margin-top: 24pt;
+  clip-path: polygon(0% 0%, 100% 0, 100% 86.2%, 95.6% 100%, 0% 100%);
+  color: white; 
+}
+
+@media only screen and (max-width: 380px) {
+  .HeaderContainerOut{
+    height: 200px;
+    width: 85%;
+    background-color: rgb(255, 255, 255); 
+    position: absolute;
+
+    margin-top: 68pt;
+    clip-path: polygon(0% 0%, 100% 0, 100% 86.2%, 95.6% 100%, 0% 100%);
+    color: white; 
+  }
+}
+
+.HeaderContainerProduct2{
+  height: 200px;
+  width: 50%;
+  background-color: rgb(255, 255, 255); 
+  position: absolute;
+  right: 24pt;
+  margin-top: 24pt;
+  
+  clip-path: polygon(0% 0%, 100% 0, 100% 86.2%, 95.6% 100%, 0% 100%);
+  color: white;
+}
+
+@media only screen and (max-width: 380px) {
+  .HeaderContainerProduct2{
+    height: 200px;
+    width: 85%;
+    background-color: rgb(255, 255, 255); 
+    position: absolute;
+
+    margin-top: 68pt;
+    clip-path: polygon(0% 0%, 100% 0, 100% 86.2%, 95.6% 100%, 0% 100%);
+    color: white; 
+  }
+}
+
+.HeaderContainerOut2{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 10, 100); 
+  border: 1pt solid rgb(255, 255, 255);
+  color: white;
+  clip-path: polygon(0% 0%, 100% 0, 100% 85.5%, 95.5% 99%, 0% 100%);
+}
+
+
+.header_page{
+  position: absolute;
+  left: 20px;
+  color: white;
+  font-size: 40pt;
+  margin-top: 24pt;
+  font-family: "TWKLausanne";
+} 
+
+  .illustration_start {
+    width: 100%;
+    height: 700px;
+    background-color:rgb(0, 0, 0);
+    position: relative;
+    z-index: 0;
+    background-size: cover;
+  }
+  
+  
+  @media only screen and (max-width: 380px) {
+    .illustration_start {
+      width: 100%;
+      height: 900px;
+      background-color:rgb(0, 0, 0);
+      position: relative;
+      z-index: 0;
+      background-size: cover;
+    }
+  }
+
+  .illustration_01 {
+    width: 100%;
+    height: 1850px;
+    position: relative;
+    /* background-image: url("../akirapages/img/akira2.jpg");  */
+    background-color:lightgray;
+    z-index: 1; 
+    background-size:cover;
+  }
+/* 
+  @media only screen and (max-width: 1280px) {
+    .illustration_01 {
+      width: 100%;
+      height: 900px;
+      z-index: 1; 
+    }
+} */
+
+  .illustration_02 {
+    width: 100%;
+    height: 1600px;
+    background: url("../akirapages/img/akiracity.jpg");
+    position: relative;
+    z-index: 2;
+    background-size: cover;
+  }
+/* 
+  @media only screen and (max-width: 1280px) {
+    .illustration_02 {
+      width: 100%;
+      height: 900px;
+      z-index: 1; 
+    }
+  } */
+
+  .illustration_03 {
+    width: 100%;
+    height: 1600px;
+    background-image: url("../akirapages/img/nibuanime.PNG");
+    background-size: cover;
+    z-index: 3;
+    position: relative;
+  }
+
+/*   @media only screen and (max-width: 1280px) {
+    .illustration_03 {
+      width: 100%;
+      height: 900px;
+      z-index: 1; 
+    }
+  } */
+
+  .illustration_04 {
+    width: 100%;
+    height: 1600px;
+    background-color:rgb(0, 10, 100);
+    position: relative;
+    z-index: 4;
+    background-size: cover;
+  }
+  
+  @media only screen and (max-width: 380px) {
+      .illustration_04 {
+      width: 100%;
+      height: 3600px;
+      background-color:rgb(0, 10, 100);
+      position: relative;
+      z-index: 4;
+      background-size: cover;
+    }
+  }
+  .illustration_sumbit_cv {
+    width: 100%;
+    height: 1600px;
+    background-color: lightgray;
+    background-size: cover;
+    z-index: 3;
+    position: relative;
+  }
+
+  .illustration_sumbit_cv {
+    width: 100%;
+    height: 1100px;
+    background-color: lightgray;
+    background-size: cover;
+    z-index: 3;
+    position: relative;
+  }
+
+  
+@media only screen and (max-width: 380px) {
+  .illustration_sumbit_cv {
+    width: 100%;
+    height: 1050px;
+    background-color: lightgray;
+    background-size: cover;
+    z-index: 3;
+    position: relative;
+  }
+}

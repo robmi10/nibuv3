@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "TWKLausanne_totext";
+    src: local("icarubriksiffror-webfont"),
+    url("../../Fonts/TWKLausanne-300.otf") format("truetype");
+}
+    
+.HeaderFont {
+    font-family: "TWKLausanne_totext";
+}
+
+.FootnoteContainter{
+    width: 25%;
+    background-color: #2C2A29;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 200px;
+    border-right: 2px solid rgb(116, 116, 116);
+}
+
+
+@media only screen and (max-width: 380px) {
+    .FootnoteContainter{
+        width: 100%;
+        background-color: #2C2A29;
+        position: absolute;
+        left: 0;
+        bottom: 4.5%;
+        height: 1.5%;
+        border-bottom: 2px solid rgb(116, 116, 116);
+    }
+
+    .FootnoteText{
+        color: white;
+        font-family: "TWKLausanne_totext";
+        margin: 8px;
+        font-size: 6pt;
+    }
+}
+
+.FootnoteContainter2{
+    width: 25%;
+    background-color: #2C2A29;
+    position: absolute;
+    left: 25%;
+    height: 200px;
+    border-right: 2px solid rgb(116, 116, 116);
+    bottom: 0;
+}
+
+@media only screen and (max-width: 380px) {
+    .FootnoteContainter2{
+        width: 100%;
+        background-color: #2C2A29;
+        position: absolute;
+        left: 0;
+        bottom: 3%;
+        height: 1.5%;
+        border-bottom: 2px solid rgb(116, 116, 116);
+    }
+}
+
+.FootnoteContainter3{
+    width: 25%;
+    background-color: #2C2A29;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 200px;
+    border-right: 2px solid rgb(116, 116, 116);
+}
+
+@media only screen and (max-width: 380px) {
+    .FootnoteContainter3{
+        width: 100%;
+        background-color: #2C2A29;
+        position: absolute;
+        left: 0;
+        bottom: 1.5%;
+        height: 1.5%;
+        border-bottom: 2px solid rgb(116, 116, 116);
+    }
+
+    .FootnoteText{
+        color: white;
+        font-family: "TWKLausanne_totext";
+        padding: 18px;
+        font-size: 8pt;
+        line-height: 10px;
+    }
+}
+
+.FootnoteContainter4{
+    width: 25%;
+    background-color: #2C2A29;
+    position: absolute;
+    left: 75%;
+    bottom: 0;
+    height: 200px;
+    border-right: 2px solid rgb(116, 116, 116);
+}
+
+@media only screen and (max-width: 380px) {
+    .FootnoteContainter4{       
+        width: 100%;
+        background-color: #2C2A29;
+        position: absolute;
+        left: 0;
+        bottom: 0%;
+        height: 1.5%;
+        border-bottom: 2px solid rgb(116, 116, 116);
+    }
+
+    .FootnoteText{
+        color: white;
+        font-family: "TWKLausanne_totext";
+        padding: 18px;
+        font-size: 8pt;
+        line-height: 10px;
+    }
+    
+}
+
+.FootnoteText{
+    color: white;
+    font-family: "TWKLausanne_totext";
+    padding: 24px;
+    font-size: 14pt;
+    line-height: 20px;
+}
+
+@media only screen and (max-width: 1280px) {
+    .FootnoteText{
+        color: white;
+        font-family: "TWKLausanne_totext";
+        padding: 5px;
+        font-size: 10pt;
+        line-height: 16px;
+    }
+
+    .FootnoteLogo{
+        margin: 24px;
+    }
+
+    .FootnoteText:hover{
+        cursor: pointer;
+    }
+}

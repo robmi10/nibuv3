@@ -1,0 +1,209 @@
+@font-face {
+    font-family: "BDRmono";
+    src: local("icarubriksiffror-webfont"),
+     url("../../Fonts/TWKLausanne-200.ttf") format("truetype");
+}
+
+.CareerContainerOut{
+    position: absolute;
+    width: 1220px;
+    left: 0;
+    margin-left: 24px;
+    height: 450px;
+    top: 30%;
+    background-color: rgb(255, 255, 255);
+    clip-path: polygon(0% 0%, 100% 0, 100% 95%, 98% 100%, 0% 100%);
+}
+
+.CareerContainer{
+    position: absolute;
+    margin: 1.8px;
+    width: 99.7%;
+    height: 100%;
+    background-color: lightgray;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .CareerContainerOut{
+        position: absolute;
+        width: 712px;
+        left: 0;
+        margin-left: 24px;
+        height: 450px;
+        top: 30%;
+        background-color: rgb(255, 255, 255);
+        clip-path: polygon(0% 0%, 100% 0, 100% 95%, 98% 100%, 0% 100%);
+    }
+    
+    .CareerContainer{
+        position: absolute;
+        margin: 1.8px;
+        width: 99.5%;
+        height: 100%;
+        background-color: lightgray;
+        color: white;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .CareerContainerOut{
+        position: absolute;
+        width: 85%;
+        left: 0;
+        margin-left: 24px;
+        height: 400px;
+        top: 35%;
+        background-color: rgb(255, 255, 255);
+        clip-path: polygon(0% 0%, 100% 0, 100% 95%, 98% 100%, 0% 100%);
+    }
+    
+    .CareerContainer{
+        position: absolute;
+        margin: 1.8px;
+        width: 99%;
+        height: 100%;
+        background-color: lightgray;
+        color: white;
+    }
+}
+
+.Careerdiv{
+    position: absolute;
+    width: 50%;
+    left: 0;
+    height: 80%;
+}
+
+.Positiondiv{
+    width: 50%;
+    height: 80%;
+    margin: 24px;
+    position: absolute;
+    left: 0;
+}
+
+.Locationdiv{
+    width: 40%;
+    height: 80%;
+    margin: 24px;
+    position: absolute;
+    left: 50%;
+}
+
+.Careerdiv2{
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    height: 80%;
+}
+
+.TextPosition{
+    line-height: 16px;
+    font-size: 14px;
+    font-family: "TWKLausanne";
+}
+
+@media only screen and (max-width: 380px) {
+    .TextPosition{
+        line-height: 16px;
+        font-size: 10px;
+        font-family: "TWKLausanne";
+    }
+    
+}
+
+.JobText{
+    margin-top: 14px;
+    line-height: 16px;
+    font-size: 14px;
+    font-family: "TWKLausanne";
+}
+.JobText:hover{
+    color: #ff6446;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 380px) {
+    .JobText{
+        margin-top: 24px;
+        line-height: 16px;
+        font-size: 12px;
+        font-family: "TWKLausanne";
+    }
+    
+}
+
+.SubmitButton{
+    background-color: #e57468;
+    width: 1280px;
+    height: 20%;
+    position: absolute;
+    left: -5%;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.SubmitButton:hover{
+    background-color: #ff6446;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .SubmitButton{
+        background-color: #e57468;
+        width: 750px;
+        height: 20%;
+        position: absolute;
+        left: -5%;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    
+    .SubmitButton:hover{
+        background-color: #ff6446;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .SubmitButton{
+        background-color: #e57468;
+        width: 350px;
+        height: 15%;
+        position: absolute;
+        left: -5%;
+        bottom: 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    
+    .SubmitButton:hover{
+        background-color: #ff6446;
+        cursor: pointer;
+    }
+}
+
+.TextSubmit{
+    font-family: "TWKLausanne";
+    margin-top: 14px;
+    line-height: 16px;
+    font-size: 16px;
+}
+
+
+
+@media only screen and (max-width: 380px) {
+    .TextSubmit{
+        font-family: "TWKLausanne";
+        margin-top: 14px;
+        line-height: 12px;
+        font-size: 14px;
+    }
+    
+}
