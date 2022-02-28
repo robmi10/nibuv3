@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "BDRmono";
+    src: local("icarubriksiffror-webfont"),
+     url("../../Fonts/TWKLausanne-200.ttf") format("truetype");
+}
+.FormText{
+    margin-top: 14px;
+    line-height: 16px;
+    font-size: 16px;
+    font-family: "TWKLausanne";
+}
+.InputDiv{
+    display: block;
+    width: 100%;
+    padding: .1rem .4rem .1rem .4rem;
+    margin: .01vw 0 ;
+    border:0;
+    border-radius: 0.2px;
+    font-size: 12px;
+}
+.buttoninput{
+   width: auto;
+   height: auto;
+   background-color: #e57468;
+   position: absolute;
+   top: 92%;
+   left: auto;
+   border-radius: 3px;
+   border: none;
+   color: white;
+}
+
+.buttoninput:hover{
+    background-color: #fc5745;
+    cursor: pointer;
+}

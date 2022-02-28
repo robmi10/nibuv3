@@ -1,0 +1,17 @@
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.image {
+    min-height: 300vh;
+    position: relative;
+  }
+
+.headercontainer{
+    
+}

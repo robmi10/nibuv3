@@ -29,11 +29,11 @@
       clip-path: polygon(0% 0%, 100% 0, 100% 70%, 98.99% 99%, 0% 100%);
     }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) {
   .container {
     background: rgb(255, 255, 255);
     float:left;
-    width: 82.7%;
+    width: 81%;
     margin-left: 24px;
     height: 40px;
     display: flex;
@@ -67,7 +67,7 @@
 .container2{
   background: #fff;
   float:left;
-  width: 47.2%;
+  width: 47%;
   margin-left: 24px;
   height: 40px;
   display: flex;

@@ -1,7 +1,12 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./Careers.css"
+import { CareerList } from './Careersdata'
+import { Form } from './Form'
+import Modal from 'react-modal';
+
 
 const Careers = () => {
+    const [showdialog, setShowdialog] = useState(false)
     return (
         <>
         <div className ="CareerContainerOut">
@@ -11,10 +16,18 @@ const Careers = () => {
                                 <div className="TextPosition">
                                         POSITION
                                 </div>
+                                
+                               
+                                {CareerList.map((options) =>{
+                                    return(
+                                        <div className="JobText">
+                                            ↘ {options.position}
+                                            </div>
+                                    )
+                                })}
 
-                                <div className="JobText" >
-                                ↘ Onet etum aped ut lam, quidus eum
-                                </div>
+                                
+                                
                         </div>
 
                         <div className ="Locationdiv">
@@ -22,9 +35,13 @@ const Careers = () => {
                                     LOCATION
                                 </div>
 
-                                <div className="JobText">
-                                Stockholm
-                                </div>
+                                {CareerList.map((options) =>{
+                                    return(
+                                        <div className="JobText">
+                                            {options.location}
+                                            </div>
+                                    )
+                                })}
                         </div>
 
                         </div>
@@ -36,32 +53,51 @@ const Careers = () => {
                                         DEPARTMENT
                                 </div>
 
-                                <div className="JobText">
-                                    Marketing
-                                </div>
-                                
+                                {CareerList.map((options) =>{
+                                    return(
+                                        <div className="JobText">
+                                            {options.department}
+                                            </div>
+                                    )
+                                })}
                             </div>
 
                             <div className ="Locationdiv">
                                 <div className="TextPosition">
                                         DEADLINE 
                                 </div>
-
-                                <div className="JobText">
-                                    01.12.2021
-                                </div>
+                                {CareerList.map((options) =>{
+                                    return(
+                                        <div className="JobText">
+                                            {options.deadline}
+                                            </div>
+                                    )
+                                })}
                             </div>  
                         </div>
+                       
 
-                        <div className="SubmitButton">
-
-                            <div className="TextSubmit">
+                        <button className="SubmitButton" onClick={() =>{setShowdialog(true)}}>
+                            <div className="TextSubmit" >
                                 SUBMIT YOUR CV
                             </div>
-
-                        </div>
+                        </button>
                 </div> 
+                
         </div>
+        {showdialog ? 
+                        <div className='CareerModal'> 
+                            <div className='InputDialogdiv'>
+                                <div className='InputDialogdiv2'> 
+                                    <Form/>
+                                    <button className='buttoninput' onClick={() =>{setShowdialog(false)}} style={{top: 0, right: 10} }>[X]</button>
+                                    <button className='buttoninput' style={{position: "absolute", right: 10} }>Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                            : 
+                         null
+                        }
         </>
     )
 }

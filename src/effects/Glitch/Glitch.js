@@ -10,10 +10,8 @@ import { TextureLoader } from 'three/src/loaders/TextureLoader'
 import NibiruBlack  from "../../components/akirapages/img/Nibiru_Black.png"
 import NibiruRed  from "../../components/akirapages/img/Nibiru_Red.png" 
 import logo from "../../components/akirapages/img/ixlogo.svg"
-
 import "aos/dist/aos.css"
 import Aos from 'aos'
-
 
 extend({ GlitchPass, BloomPass, AsciiEffect  });
 const Scene = ({NewSize}) => {
@@ -35,16 +33,12 @@ useEffect(() => {
       onClick={() =>{console.log("its clickeeed!")}}
       ref={ref}
       style={{cursor: "pointer"}}
-      onPointerOver={() => setHovered(true)}
-      onPointerOut={() => setHovered(false)}
       >
       
       <group position={[0,0,0]} rotation={[0,0,0]}>
-      <Sphere visible position={[0, 0, 0]} args={[1.5, 200, 200]}>
+      <Sphere visible position={[0, 0, 0]} args={[1.5, 50, 100]}>
       <meshStandardMaterial
-         
           map={texture}
-          
           attach="material"
           color="#fff"
           factor={1} // Strength, 0 disables the effect (default=1)
@@ -53,14 +47,14 @@ useEffect(() => {
           bumpScale={0.4}
           wireframe
         />
-
+        
         </Sphere>
 
         <Html>
-          <h1 style={{color: "#ffff", position:"absolute", left: -550}}>NIBIRU</h1>
-
-          <h1 style={{color: "#ffff", position:"absolute", left: 250}}>SOFTWARE</h1>
-          
+          <div className='textcontainter'>
+          <h1 className='Htmlstyle' style={{color: "#ffff", position:"absolute", left: -345}}>NIBIRU</h1>
+          <h1 className='Htmlstyle' style={{color: "#ffff", position:"absolute", left: 220}}>SOFTWARE</h1>
+          </div>
         </Html>
 
 
@@ -89,14 +83,14 @@ export default function Glitch() {
 
             <Effects>
               <glitchPass attachArray="passes" />
-            </Effects>  
+            </Effects>   
 
             <ambientLight intensity={0.5} />
-            <directionalLight intensity={0.05} />
+            
             <pointLight intensity={0.2} color="red" />
 
             <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-            <Suspense fallback={null}>
+            <Suspense fallback={null} >
               <Scene />
           
             </Suspense>

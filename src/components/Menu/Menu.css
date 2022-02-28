@@ -5,8 +5,12 @@
 }
 
 .MenuFont {
-    font-family: "BDRmono";
-    
+    font-family: "BDRmono";    
+}
+
+.ProductIxButton{
+  font-family: "BDRmono";
+
 }
 
 .MenuStyle{

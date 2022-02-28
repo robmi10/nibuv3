@@ -17,7 +17,6 @@ const MenuClosed = () => {
         <>
         <div className="Menucontainer" style={{cursor:"pointer"}} onClick={() => {openMenu()}}>
                 <h1 className="MenuFont MenuStyle">MENU</h1>
-            
         </div> 
             
         </>

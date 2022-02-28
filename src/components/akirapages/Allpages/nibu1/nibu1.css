@@ -1,0 +1,7 @@
+.customvideo{
+    z-index: 0;
+    width: 200px;
+    height: 100vh;
+    object-fit: cover;
+}
+

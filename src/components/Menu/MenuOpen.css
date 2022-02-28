@@ -1,15 +1,20 @@
 @font-face {
     font-family: "BDRmono";
     src: local("icarubriksiffror-webfont"),
-    url("../Fonts/BDRmono.otf") format("truetype");
+    url("../Fonts/BDRmono.otf") format("otf");
 }
 
-@font-face {
+/* @font-face {
     font-family: "TWK";
     src: local("icarubriksiffror-webfont"),
-    url("../Fonts/TWKLausanne-300.woff") format("truetype");
-}
+    url("../Fonts/TWKLausanne-300.woff") format("woff");
+} */
 
+@font-face {  
+    font-family: 'TWK';  
+    src: local("icarubriksiffror-webfont"),       
+    url("../Fonts/TWKLausanne-300.woff") format('woff')}  
+ 
 .item:hover a p.new-label:after{
     content: 'Go To';
 }   
@@ -22,7 +27,7 @@
     font-family: "TWK";
     color: rgb(0, 0, 0);
     cursor: pointer;
-    margin-top: 5px;
+    
 }
  
 .MenuOpencontainer {
@@ -42,7 +47,7 @@
     float:right;
     background-color: #0000ff;
     width: 619px;
-    height: 200px;
+    height: 150px;
     margin-right: 24px;
     position: sticky;
     justify-content: center;
@@ -52,11 +57,11 @@
     clip-path: polygon(0% 0%, 100% 0, 100% 90%, 97% 100%, 0% 100%);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 820px) {
     .MenuOpencontainer2 {
         float:right;
         background-color: #0000ff;
-        width: 357px;
+        width: 46.5%;
         height: 200px;
         margin-right: 24px;
         position: sticky;
@@ -67,6 +72,8 @@
         clip-path: polygon(0% 0%, 100% 0, 100% 90%, 97% 100%, 0% 100%);
     }
 }
+
+
 
 @media only screen and (max-width: 380px) {
     .MenuOpencontainer2 {

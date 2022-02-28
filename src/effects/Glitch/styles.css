@@ -1,3 +1,20 @@
+@font-face {
+    font-family: "TWKLausanne_totext";
+    src: local("icarubriksiffror-webfont"),
+    url("../../components/Fonts/TWKLausanne-300.woff") format("truetype");
+}
+
+.Htmlstyle{
+    font-family: "TWKLausanne_totext";
+}
+
+.textcontainter{
+    margin: 25%;
+    width: 50%;
+    height: 25%;
+    background-color: transparent;
+}
+
 .containerglitch1 {
     height: 2200px;
     width: 2636px;
@@ -16,7 +33,35 @@
         height: 100%;
         width: 100%;
         position: absolute;
-        margin-top: -100px;
+        margin-top: 0px;
+        left: 0;
+        background-size: cover;
+        background: transparent;
+        font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+            helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+    }
+}
+
+
+@media only screen and (max-width: 820px) {
+    .containerglitch1 {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        margin-top: 0px;
+        left: 0;
+        background: transparent;
+        font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+            helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .containerglitch1 {
+        height: 60%;
+        width: 100%;
+        position: absolute;
+        margin-top: 0px;
         left: 0;
         background-size: cover;
         background: transparent;

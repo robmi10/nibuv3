@@ -2,6 +2,7 @@ import React from 'react'
 import { NavbarContainer } from './NavbarStyles'
 import "./Navbar.css"
 import Nibirulogo from "../Images/Nibirulogo.svg"
+import {Link} from 'react-scroll'
 
 const Navbar = () => {
     return (
